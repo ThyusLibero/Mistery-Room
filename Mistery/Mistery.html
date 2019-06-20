@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mistery Room</title>
+
+    <link rel="stylesheet" href="Stile.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.area1').click(function () {
+                var collapse_content_selector = $(this).attr('href');
+                var toggle_switch = $(this);
+                $(collapse_content_selector).toggle(function () {
+                    $('#Lugano').css('display', 'none');
+                    $('#Taverne').css('display', 'none');
+                });
+            });
+            $('.area2').click(function () {
+                var collapse_content_selector = $(this).attr('href');
+                var toggle_switch = $(this);
+                $(collapse_content_selector).toggle(function () {
+                    $('#Lugano').css('display', 'none');
+                    $('#Losone').css('display', 'none');
+                });
+            });
+            $('.area3').click(function () {
+                var collapse_content_selector = $(this).attr('href');
+                var toggle_switch = $(this);
+                $(collapse_content_selector).toggle(function () {
+                    $('#Losone').css('display', 'none');
+                    $('#Taverne').css('display', 'none');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-----------------------------------------------------------Barra di navigazione--------------------------------------------------------------------->
+
+    <section id="barra-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><h1>Inserire Logo</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mappa">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stanze">Stanze</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#regolamento">Regolamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prezzi">Prezzi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#calendario">Prenota</a>
+                    </li>
+                    <a class="nav-link" href="#contatti">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------Mappa---------------------------------------------------------------------------->
+
+    <section id="mappa">
+        <div class="contenitore">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="Immagini/Ticino.png" usemap="#mappatura">
+                    <map id="mappatura" name="mappatura">
+                        <area class="area1" shape="circle" alt="Stanze-Losone" title="" coords="187,288,14" href="#Losone" target="" />
+                        <area class="area2" shape="circle" alt="Stanze-Taverne" title="" coords="256,374,12" href="#Taverne" target="" />
+                        <area class="area3" shape="circle" alt="Stanze-Lugano" title="" coords="255,414,14" href="#Lugano" target="" />
+                    </map>
+                </div>
+                <div class="col-md-5">
+                    <div id="Losone" class="losone" style="display:none">
+                        <h1>Losone</h1>
+                        <p>in arrivo...</p>
+                    </div>
+                    <div id="Taverne" class="taverne" style="display:none">
+                        <h1>Taverne</h1>
+                        <h5>Luogo</h5>
+                        <p>Via Rained 9a</p>
+                        <h3>The Cage</h3>
+                        <a href="sito/Taverne/Cage.html" class="btn btn-primary">Vai alla stanza >></a>
+                        <h3>Il tormento di Karina</h3>
+                        <a href="sito/Taverne/Karina.html" class="btn btn-primary">Vai alla stanza >></a>
+                        <h3>Hood e le 7 sfere del drago</h3>
+                        <a href="sito/Taverne/Sfere.html" class="btn btn-primary">Vai alla stanza >></a>
+                    </div>
+                    <div id="Lugano" class="lugano" style="display:none">
+                        <h1>Lugano</h1>
+                        <h5>A piedi:</h5>
+                        <p>fermata del Bus Nr 2 3 e 5 di via Pelli. Da via pelli 18 (scendere le scale)</p>
+                        <h5>in auto e per posteggi zona blu:</h5> 
+                        <p>Via Berna</p>
+                        <p>Da via Berna
+                           Il Misteryroom si trova  tra l'edificio numero 5 e 7
+                           ( Salire la scalinata / 2° piano a destra)</p>
+                        <h3>La vendetta del Faraone</h3>
+                        <a href="sito/Lugano/Faraone.html" class="btn btn-primary">Vai alla stanza >></a>
+                        <h3>Psyco</h3>
+                        <a href="sito/Lugano/Psyco.html" class="btn btn-primary">Vai alla stanza >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------Regolamento-------------------------------------------------------------------------->
+
+    <section id="regolamento">
+        <h1>Regolamento</h1>
+        <p>
+            Un'escape room è un gioco di logica nel quale i concorrenti, una volta rinchiusi in una stanza allestita a tema, devono cercare una via d'uscita utilizzando ogni elemento della struttura e risolvendo codici, enigmi, rompicapo e indovinelli. 
+            Per poter completare con successo il gioco, i partecipanti devono organizzare la fuga entro un limite di tempo prestabilito, di solito di 60 minuti.
+            L'obiettivo dell'avventura è quello di stimolare la mente, l’intuito, la logica e, non da ultimo, il team building: la collaborazione tra tutti i partecipanti è un fattore indispensabile per risolvere gli enigmi e completare con successo il gioco.
+        </p>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-----------------------------------------------------------------Prezzi----------------------------------------------------------------------------->
+
+    <section id="prezzi">
+        <div class="contenitore">
+            <h1>Listino prezzi</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="prezzo-singolo">
+                        <div class="titolo-prezzo">
+                            <h5>2 persone</h5>
+                            <p>Stanze</p>
+                        </div>
+                        <div class="prezzo-contenuto">
+                            <ul>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Faraone.html">La vendetta del faraone</a></li>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Psyco.html">Psyco</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Cage.html">The Cage</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Karina.html">Il tormento di Karina</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottone">
+                            <h5>1h | 60chf</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="prezzo-singolo">
+                        <div class="titolo-prezzo">
+                            <h5>3 persone</h5>
+                            <p>Stanze</p>
+                        </div>
+                        <div class="prezzo-contenuto">
+                            <ul>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Faraone.html">La vendetta del faraone</a></li>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Psyco.html">Psyco</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Cage.html">The Cage</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Karina.html">Il tormento di Karina</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottone">
+                            <h5>1h | 75chf >></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="prezzo-singolo">
+                        <div class="titolo-prezzo">
+                            <h5>4 persone</h5>
+                            <p>Stanze</p>
+                        </div>
+                        <div class="prezzo-contenuto">
+                            <ul>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Faraone.html">La vendetta del faraone</a></li>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Psyco.html">Psyco</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Cage.html">The Cage</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Karina.html">Il tormento di Karina</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottone">
+                            <h5>1h | 100chf >></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="prezzo-singolo">
+                        <div class="titolo-prezzo">
+                            <h5>5 persone</h5>
+                            <p>Stanze</p>
+                        </div>
+                        <div class="prezzo-contenuto">
+                            <ul>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Faraone.html">La vendetta del faraone</a></li>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Psyco.html">Psyco</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Cage.html">The Cage</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Karina.html">Il tormento di Karina</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottone">
+                            <h5>1h | 125chf >></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="prezzo-singolo">
+                        <div class="titolo-prezzo">
+                            <h5>6 persone</h5>
+                            <p>Stanze</p>
+                        </div>
+                        <div class="prezzo-contenuto">
+                            <ul>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Faraone.html">La vendetta del faraone</a></li>
+                                <li><a class="prezzo-btn" href="sito/Lugano/Psyco.html">Psyco</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Cage.html">The Cage</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Karina.html">Il tormento di Karina</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottone">
+                            <h5>1h | 150chf >></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="prezzo-singolo">
+                        <div class="titolo-prezzo">
+                            <h5>da 2 a 4 persone</h5>
+                            <p>Stanze</p>
+                        </div>
+                        <div class="prezzo-contenuto">
+                            <ul>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Sfere.html">Hood e le 7 sfere del drago (stanza 1)</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Sfere.html">Hood e le 7 sfere del drago (stanza 2)</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottone">
+                            <h5>1h | 100chf >></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="prezzo-singolo">
+                        <div class="titolo-prezzo">
+                            <h5>da 5 a 10 persone</h5>
+                            <p>Stanze</p>
+                        </div>
+                        <div class="prezzo-contenuto">
+                            <ul>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Sfere.html">Hood e le 7 sfere del drago (stanza 1)</a></li>
+                                <li><a class="prezzo-btn" href="sito/Taverne/Sfere.html">Hood e le 7 sfere del drago (stanza 2)</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottone">
+                            <h5>1h | 25chf/persona >></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------Calendario--------------------------------------------------------------------------->
+
+    <section id="calendario">
+        <div class="contenitore">
+            <p>Controlla sul calendario se la sfida che hai scelto è disponibile.</p>
+            <a href="#" class="btn btn-primary">Calendario >></a>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------Contatti---------------------------------------------------------------------------->
+
+    <section id="contatti">
+        <div class="contenitore">
+            <h1>Contatti</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Messaggio"></textarea>
+                        </div>
+                        <div class="row services">
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        Seleziona stanza:
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">La vendetta del Faraone</a>
+                                        <a class="dropdown-item" href="#">Psyco</a>
+                                        <a class="dropdown-item" href="#">The Cage</a>
+                                        <a class="dropdown-item" href="#">Il tormento di Karina</a>
+                                        <a class="dropdown-item" href="#">Hood e le 7 sfere del drago</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-primary">Invia >></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <div class="indirizzi">
+                        <h4>Se preferisci scrivici una mail:</h4>
+                        <b>Email:</b>
+                        exemple@sito.ch
+                    </div>
+                    <div class="indirizzi">
+                        <h4>oppure seguici qui:</h4>
+                        <label><b>Social:</b></label>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-----------------------------------------------------------------Avviso----------------------------------------------------------------------------->
+
+    <section id="avviso">
+        <div class="contenitore">
+            <div class="avviso">
+                <b>Avviso:</b>
+                Le prenotazioni possono essere disdette con un preavviso di 48 ore superato questo termine sarà richiesta una penale pari alla metà del costo finale.
+                IN CASO DI ANNULLAMENTO NELLO STESSO GIORNO VERRÂ FATTURATO L'INTERO IMPORTO DELLA PRENOTAZIONE.
+            </div>
+        </div>
+    </section>
+    
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------Copyright--------------------------------------------------------------------------->
+
+    <section id="copyright">
+        <div class="contenitore text-center">
+            <p><i class="far fa-copyright"></i>2023 by Jade&Andy.</p>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+</body>
+</html>

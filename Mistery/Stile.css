@@ -1,0 +1,693 @@
+/*-------------------------------------------------------------------------Home-------------------------------------------------------------------------------*/
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------------Barra di navigazione-----------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#barra-nav
+{
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+.navbar
+{
+    background:#fff;
+}
+.nav-link {
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.navbar-toggler 
+{
+    border:none!important;
+}
+.navbar-brand h1 
+{
+    font-style:oblique;
+}
+
+/*----------------------*/
+/*------Dimensioni------*/
+
+.navbar-nav li
+{
+    padding:0 10px;
+}
+.navbar-nav li a 
+{
+    float:right;
+    text-align:left;
+}
+
+/*----------------------*/
+/*Colore passaggio mouse*/
+
+#barra-nav ul li a:hover
+{
+    color:#007bff!important;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------Mappa-----------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#mappa .contenitore
+{
+    padding-top:100px;
+    padding-bottom:100px;
+    background: #1a2b3c; 
+}
+
+/*----------------------*/
+/*--------Luoghi--------*/
+/*--------Losone--------*/
+
+.losone 
+{
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 24px;
+    color:#fff;
+}
+.losone p
+{
+    padding-left: 100px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*----------------------*/
+/*-------Taverne--------*/
+
+.taverne 
+{
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 24px;
+    color: #fff;
+}
+.taverne p 
+{
+    font-size: 14px;
+    color: #fff;
+}
+.taverne h1 
+{
+    padding-bottom: 15px;
+    color: #fff;
+}
+.taverne h3 
+{
+    padding-top: 15px;
+    color: #fff;
+}
+.taverne h5 
+{
+    padding-top: 15px;
+    color: #fff;
+}
+
+/*----------------------*/
+/*--------Lugano--------*/
+
+.lugano 
+{
+    padding-top: 100px;
+    font-size: 24px;
+    color: #fff;
+}
+.lugano p 
+{
+    font-size: 14px;
+    color: #fff;
+}
+.lugano h1 
+{
+    padding-bottom:15px;
+    color: #fff;
+}
+.lugano h3 
+{
+    padding-top:15px;
+    color: #fff;
+}
+.lugano h5 
+{
+    padding-top:15px;
+    color: #fff;
+}
+
+/*----------------------*/
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------Regolamento---------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#regolamento 
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(immagini/Porta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #efefef !important;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+/*----------------------*/
+/*--------Titolo--------*/
+
+#regolamento h1 
+{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fff;
+}
+#regolamento h1::after 
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 10px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+/*----------------------*/
+/*------Contenuto-------*/
+
+#regolamento p 
+{
+    font-size: 18px;
+    margin-top: 20px;
+    padding-left:20px;
+    padding-right:20px;
+    color: #ccc;
+    text-align:center;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------Prezzi------------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#prezzi 
+{
+    padding: 40px;
+    padding-top: 70px;
+    background: #1a2b3c;
+}
+
+/*----------------------*/
+/*--------Titolo--------*/
+
+#prezzi h1 
+{
+    text-align:center;
+    padding-bottom:10px;
+    padding-top:20px;
+    color:#fff;
+}
+#prezzi h1::after 
+{
+    content:'';
+    background:#007bff;
+    display:block;
+    height:10px;
+    width:170px;
+    margin:20px auto 5px;
+}
+
+/*----------------------*/
+/*------Contenuto-------*/
+
+.titolo-prezzo 
+{
+    background-color:#007bff;
+    text-align:center;
+    padding-top:10px;
+}
+.titolo-prezzo p
+{
+    color:#fff;
+    padding-bottom:10px;
+}
+.prezzo-contenuto 
+{
+    margin-left:30px;
+}
+.prezzo-singolo 
+{
+    margin:10px auto;
+    display:inline;
+    float:left;
+    width:100%;
+    background-color:#fff;
+    transition:0.5s;
+}
+.prezzo-singolo:hover 
+{
+    box-shadow:0 2px 20px #333;
+}
+
+/*----------------------*/
+/*-------Bottone--------*/
+
+.bottone 
+{
+    text-align:center;
+    padding-bottom:10px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------Calendario----------------------------------------------------------------------------*/
+
+#calendario {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Immagini/Porta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding-top: 255px;
+    padding-bottom: 255px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+#calendario p 
+{
+    font-size:20px;
+    color:#fff;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Contatti-----------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#contatti 
+{
+    background: #1a2b3c;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+/*----------------------*/
+/*--------Titolo--------*/
+
+#contatti h1 
+{
+    text-align:center;
+    padding-bottom:10px;
+    color:#fff;
+}
+#contatti h1::after 
+{
+    content:'';
+    background:#007bff;
+    display:block;
+    height:10px;
+    width:170px;
+    margin:20px auto 5px;
+}
+
+/*----------------------*/
+/*------Contenuto-------*/
+
+.contact-info .fab
+{
+    margin-left:20px;
+    margin-left:20px;
+    color:#007bff;
+    font-weight:bold;
+    font-size:20px;
+}
+.contact-form
+{
+    padding:15px;
+}
+#contatti .col-md-3
+{
+    margin-top:20px;
+    margin-right:50px;
+}
+.form-control
+{
+    border-radius:0!important;
+    border:none!important;
+}
+.indirizzi
+{
+    margin-top:15px;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------Avviso------------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#avviso 
+{
+    background: #ff0000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000000;
+    font-size: large;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------Copyright-----------------------------------------------------------------------------*/
+
+#copyright 
+{
+    background: #555;
+    color:#fff;
+    padding:100px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------Pagine------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------Barra di navigazione-----------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#barra-pag {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#barra-pag .navbar-pag {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Immagini/Porta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #1a2b3c;
+}
+#barra-pag .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+#barra-pag .navbar-toggler {
+    border: none !important;
+}
+#barra-pag .navbar-brand h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: oblique;
+    padding-left:30px;
+}
+
+/*----------------------*/
+/*------Dimensioni------*/
+
+#barra-pag .navbar-nav li {
+    padding: 10px 10px;
+}
+#barra-pag .navbar-nav li a {
+        float: right;
+        text-align: left;
+    }
+
+/*----------------------*/
+/*Colore passaggio mouse*/
+
+#barra-pag ul li a:hover {
+    color: #007bff !important;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Descrizione----------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#descrizione .contenitore {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: #1a2b3c;
+}
+
+/*----------------------*/
+/*--------Titolo--------*/
+
+#descrizione h1 
+{
+    text-align: center;
+    padding-top:100px;
+    padding-bottom:20px;
+    color: #fff;
+}
+#descrizione h1::after 
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 10px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+/*----------------------*/
+/*------Contenuto-------*/
+
+#descrizione p {
+    text-align: center;
+    padding-top: 14px;
+    color: #fff;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------Prezzi------------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#prezzi-pag .contenitore {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Immagini/Porta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+
+/*----------------------*/
+/*--------Titolo--------*/
+
+#prezzi-pag h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    color: #fff;
+    font-size: 38px;
+}
+#prezzi-pag h1::after 
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 10px;
+    width: 170px;
+    margin: 20px auto 5px;
+
+}
+
+/*----------------------*/
+/*------Contenuto-------*/
+
+.tavola
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+.tabella h4
+{
+    text-align:center;
+}
+.tavola p
+{
+    text-align:center;
+    font-size:18px;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Indirizzo----------------------------------------------------------------------------*/
+/*-------Generale-------*/
+#indirizzo {
+    padding: 40px;
+    padding-top: 70px;
+    background: #1a2b3c;
+}
+
+/*----------------------*/
+/*--------Titolo--------*/
+
+#indirizzo h1 
+{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 120px;
+    color: #fff;
+}
+#indirizzo h1::after 
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 10px;
+    width: 170px;
+    margin: 20px auto 5px;
+
+}
+
+/*----------------------*/
+/*------Contenuto-------*/
+
+.indirizzi h4
+{
+    padding-top:10px;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------Calendario----------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#calendario-pag .contenitore 
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Immagini/Porta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 255px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+
+/*----------------------*/
+/*--------Titolo--------*/
+
+#calendario-pag h1 
+{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    color: #fff;
+}
+#calendario-pag h1::after 
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 10px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+/*----------------------*/
+/*------Contenuto-------*/
+
+.tavola 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.tavola p 
+{
+    text-align: center;
+    font-size: 18px;
+    padding-top:15px;
+    padding-right:10px;
+}
+#calendario-pag .btn 
+{
+    background-color: #b6ff00;
+    color:#1a2b3c;
+    font-size:20px;
+    margin-top:5px;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Contatti-----------------------------------------------------------------------------*/
+/*-------Generale-------*/
+
+#contatti-pag 
+{
+    background: #1a2b3c;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+/*----------------------*/
+/*--------Titolo--------*/
+
+#contatti-pag h1 
+{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+#contatti-pag h1::after 
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 10px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+/*----------------------*/
+/*------Contenuto-------*/
+
+.contact-info .fab 
+{
+    margin-left: 20px;
+    margin-left: 20px;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-form 
+{
+    padding: 15px;
+}
+#contatti-pag .col-md-3 
+{
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.form-control 
+{
+    border-radius: 0 !important;
+    border: none !important;
+}
+.indirizzi 
+{
+    margin-top: 15px;
+}
+
+/*----------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
